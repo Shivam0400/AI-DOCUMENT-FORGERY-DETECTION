@@ -42,8 +42,9 @@ const DashboardPage = ({ language }) => {
     formData.append("file", file);
 
     try {
-      // Connect to the Python FastAPI backend
-      const response = await fetch('http://localhost:8000/api/analyze', {
+      // Connect to the Python FastAPI backend (or serverless function in prod)
+      const apiUrl = import.meta.env.VITE_API_URL || '/api/analyze';
+      const response = await fetch(apiUrl, {
         method: 'POST',
         body: formData,
       });
