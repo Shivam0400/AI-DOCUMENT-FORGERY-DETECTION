@@ -67,12 +67,23 @@ uvicorn main:app --reload
 
 ---
 
-## 📸 Overview of Workflow
+## 📸 Project Showcase
 
-1. **System Online**: The user lands on a dynamic neon UI and toggles English/Hindi if needed.
-2. **Document Upload**: A glowing neural-scan zone accepts the suspicious document.
-3. **Real-time Scan**: The AI extracts pixel configurations and generates an integrity map.
-4. **Explainable Report**: The user receives a bold "GENUINE" or "FORGED" status alongside interactive bounding boxes that highlight the modified font or pasted signature directly on the document canvas.
+### 1. System Landing Page
+The user lands on a dynamic neon UI (supporting automatic English & Hindi translations) giving a brief explanation of the explainable forgery AI capabilities.
+![Landing Page](screenshots/homepage.png)
+
+### 2. Neural Scanning Interface
+Once a document is uploaded, a glowing neural-scan zone engages. It displays a high-tech laser sweep, counter-rotating rings, and active extraction terminal readouts to provide visual feedback during processing.
+![Scanning Document](screenshots/scanning.png)
+
+### 3. Genuine Document Verification
+The Explainable AI breaks down a verified document with a 99.5% confidence score, generating an "Authentic Appearance" report detailing why the logos, graphical elements, and layout are consistent without tampering signs.
+![Genuine Result](screenshots/genuine.png)
+
+### 4. Forged Document Detection
+The system securely flags forged documents. It generates distinct warning sections explaining digital manipulation, and overlays interactive heatmap-style bounding boxes directly above the altered text or mismatched fonts so officers know exactly where to look.
+![Forged Result](screenshots/forged.png)
 
 ---
 
